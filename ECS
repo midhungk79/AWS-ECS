@@ -1,3 +1,5 @@
+First done aws configure, then given iam users access key and secret key. then only the aws ecr repository command will work for us. (aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5w5x0x7)
+
 Pulled Nginx image to ECR. 
 
 [ec2-user@ip-172-31-27-59 ~]$ sudo su -
@@ -73,7 +75,7 @@ https://prnt.sc/gJNQ2sVcUiwu
 
 While adding services  inside ECS cluster along with it attached a ALB with target group .
 
-Then calling the load balancer dns name.  it will shows the nginx default psge as below. 
+Then calling the load balancer dns name.  it will shows the nginx default page as below. 
 
 
 https://prnt.sc/AIyMK5IH1ABz
